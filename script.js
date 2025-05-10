@@ -22,6 +22,7 @@ let current = 0;
 function startIntro() {
   document.getElementById("intro").style.display = "none";
   document.getElementById("main-content").style.display = "flex";
+  document.querySelector('.music-toggle').style.display = 'none';
   nextScene();
 }
 
@@ -77,5 +78,21 @@ function toggleMusic() {
     music.play().catch(e => console.log("Error al reproducir audio:", e));
   } else {
     music.pause();
+  }
+}
+
+// Reemplazar corazones con imágenes
+function showHearts() {
+  const container = document.getElementById("corazones");
+  for (let i = 0; i < 30; i++) {
+    const img = document.createElement("img");
+    img.src = "img/corazon_cara.png";
+    img.className = "heart";
+    img.style.left = Math.random() * 100 + "%";
+    img.style.animationDelay = Math.random() * 3 + "s";
+    img.style.width = "30px";
+    img.style.height = "30px";
+    img.style.opacity = "0.8";
+    container.appendChild(img);
   }
 }
