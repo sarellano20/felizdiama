@@ -7,15 +7,17 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <audio id="bg-music" loop muted>
+  <audio id="bg-music" preload="auto">
     <source src="audio/musica.mp3" type="audio/mpeg">
   </audio>
 
   <div class="scene-container">
-    <h1>Feliz Día de la Madre 💐</h1>
+    <h1>🌷 Feliz Día de la Madre 🌷</h1>
     <div class="scene animated" id="scene">
-      <img src="img/mela1.JPG" alt="Escena 1" id="scene-image" />
-      <p id="scene-text">Tu amor es medicina que cura hasta el alma. Gracias por ser esa madre tan fuerte y tierna a la vez. ❤️</p>
+      <div class="scene-frame">
+        <img src="img/mela1.JPG" alt="Escena 1" id="scene-image" />
+        <p id="scene-text">Tu amor es medicina que cura hasta el alma. Gracias por ser esa madre tan fuerte y tierna a la vez. ❤️</p>
+      </div>
       <button onclick="nextScene()">Siguiente</button>
     </div>
     <div class="dedicatoria" id="finalMessage" style="display:none;">
