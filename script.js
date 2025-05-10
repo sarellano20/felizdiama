@@ -1,3 +1,4 @@
+
 const images = [
   "img/mela1.JPG",
   "img/mela6.jpg",
@@ -8,31 +9,53 @@ const images = [
 ];
 
 const texts = [
-  "Tu amor es medicina que cura hasta el alma. Gracias por ser esa madre tan fuerte y tierna a la vez. ❤️",
-  "Victoria tiene el mejor ejemplo: una mamá valiente, alegre y llena de amor. 💕",
-  "Con tu ternura todo es más fácil, tu risa es el sol de nuestra casa. ☀️",
-  "Hoy celebramos más que tu maternidad, celebramos tu fuerza, tu esfuerzo y tu infinito corazón. 🎓👩‍👧",
-  "No hay palabras suficientes para agradecerte... Solo amor, abrazos y esta sorpresa. 🎈",
-  "¡Te amamos! Eres nuestra reina, nuestra compañera y nuestro hogar. 👨‍👩‍👧"
+  "Hola mi amor, se que estos tiempos han sido difíciles, pero la capacidad que hemos tenido para poder haber salido adelante me ha demostrado que somos personas fuertes y capaces de muchas cosas.",
+  "Pero todo eso no hubiera sido posible si no fuera por ti, tú has sido un pilar fundamental en mi vida y en la de Victoria. ¡Eres una super mamá!",
+  "Eres una mamá excelente, que todo lo que hace y hará siempre será para nuestra hija. Nunca olvidaré las veces que trabajabas con Victoria en brazos o estudiabas con ella en tu vientre. ¡Eres la mejor mamá del mundo!",
+  "Te amo con todo mi corazón, y no habrá nada ni nadie que cambie eso. Me esforzaré en la vida para darte todo lo que mereces, todo lo que necesites para que seas feliz. Tú y Victoria se merecen todo lo más bonito de este mundo, y es por eso que estamos haciendo todo esto.",
+  "Sé que por falta de tiempo y dinero (aunque lo tienes escondido 😅), no puedo darte nada hoy, pero sí puedo hacerte esto, que es lo que más me gusta ❤️.",
+  "img", "img", "img", "img", "img", "img"
 ];
 
 let current = 0;
 
-function nextScene() {
-  const music = document.getElementById("bg-music");
-  if (music.paused) {
-    music.play().catch(e => console.log("Error al reproducir audio:", e));
-  }
+function startIntro() {
+  document.getElementById("intro").style.display = "none";
+  document.getElementById("main-content").style.display = "flex";
+  nextScene();
+}
 
-  current++;
-  if (current < images.length) {
-    document.getElementById("scene-image").src = images[current];
-    document.getElementById("scene-text").textContent = texts[current];
+function nextScene() {
+  const textBox = document.getElementById("scene-text");
+  const imageBox = document.getElementById("scene-image");
+
+  if (current < texts.length) {
+    if (texts[current] === "img") {
+      imageBox.style.display = "block";
+      imageBox.src = images.shift();
+      textBox.textContent = getImageText(current - 5);  // desde índice 0 para frases con imagen
+    } else {
+      imageBox.style.display = "none";
+      textBox.textContent = texts[current];
+    }
+    current++;
   } else {
     document.getElementById("scene").style.display = "none";
     document.getElementById("finalMessage").style.display = "block";
     showHearts();
   }
+}
+
+function getImageText(index) {
+  const imageTexts = [
+    "Tu amor es medicina que cura hasta el alma. Gracias por ser esa madre tan fuerte y tierna a la vez. ❤️",
+    "Victoria tiene el mejor ejemplo: una mamá valiente, alegre y llena de amor. 💕",
+    "Con tu ternura todo es más fácil, tu risa es el sol de nuestra casa. ☀️",
+    "Hoy celebramos más que tu maternidad, celebramos tu fuerza, tu esfuerzo y tu infinito corazón. 🎓👩‍👧",
+    "No hay palabras suficientes para agradecerte... Solo amor, abrazos y esta sorpresa. 🎈",
+    "¡Te amamos! Eres nuestra reina, nuestra compañera y nuestro hogar. 👨‍👩‍👧"
+  ];
+  return imageTexts[index] || "";
 }
 
 function showHearts() {
@@ -46,7 +69,6 @@ function showHearts() {
     container.appendChild(heart);
   }
 }
-
 
 function toggleMusic() {
   const music = document.getElementById("bg-music");

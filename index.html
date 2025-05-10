@@ -19,12 +19,17 @@
     <span class="music-label">Música</span>
   </div>
 
-  <div class="scene-container">
+  <div class="intro" id="intro">
+    <p class="intro-message">🎧 Para mejorar la experiencia, activa la música tocando el botón arriba.</p>
+    <button onclick="startIntro()">Iniciar</button>
+  </div>
+
+  <div class="scene-container" style="display: none;" id="main-content">
     <h1>🌷 Feliz Día de la Madre 🌷</h1>
     <div class="scene animated" id="scene">
       <div class="scene-frame">
-        <img src="img/mela1.JPG" alt="Escena 1" id="scene-image" />
-        <p id="scene-text">Tu amor es medicina que cura hasta el alma. Gracias por ser esa madre tan fuerte y tierna a la vez. ❤️</p>
+        <img src="" alt="Escena" id="scene-image" style="display: none;" />
+        <p id="scene-text"></p>
       </div>
       <button onclick="nextScene()">Siguiente</button>
     </div>
