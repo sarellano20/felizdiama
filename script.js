@@ -49,12 +49,12 @@ function nextScene() {
 
 function getImageText(index) {
   const imageTexts = [
-    "Tu amor es medicina que cura hasta el alma. Gracias por ser esa madre tan fuerte y tierna a la vez. ❤️",
-    "Victoria tiene el mejor ejemplo: una mamá valiente, alegre y llena de amor. 💕",
-    "Con tu ternura todo es más fácil, tu risa es el sol de nuestra casa. ☀️",
-    "Hoy celebramos más que tu maternidad, celebramos tu fuerza, tu esfuerzo y tu infinito corazón. 🎓👩‍👧",
-    "No hay palabras suficientes para agradecerte... Solo amor, abrazos y esta sorpresa. 🎈",
-    "¡Te amamos! Eres nuestra reina, nuestra compañera y nuestro hogar. 👨‍👩‍👧"
+    "Eres la luz de nuestros dias, la razon por la cual el amor familiar es tan bonito ❤️",
+    "Tu manera de ser, tu forma tan caracteristica es lo que te hace a ti especial(me encantas). 💕",
+    "Brillas en todo lo que haces, con el minimo esfuerzo tu siempre estas a un pie que el resto de personas a tu alrededor ☀️",
+    "Eres una mujer admirable, fuerte, dedicada, eres todo lo que no te imaginas, eres simplemente la mejor mama del mundo! 👩‍👧",
+    "Dios me premio contigo, siempre agradezo cada dia por tenerlas a ustedes, son toda mi felicidad 🎈",
+    "Siempre te apoyare en todo lo que hagas, este o no este a mi alcance, te mereces mi ayuda siempre, eso jamas te faltara. 👨‍👩‍👧"
   ];
   return imageTexts[index] || "";
 }
