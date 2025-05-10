@@ -10,10 +10,10 @@ const images = [
 
 const texts = [
   "Hola mi amor, se que estos tiempos han sido difíciles, pero la capacidad que hemos tenido para poder haber salido adelante me ha demostrado que somos personas fuertes y capaces de muchas cosas.",
-  "Pero todo eso no hubiera sido posible si no fuera por ti, tú has sido un pilar fundamental en mi vida y en la de Victoria. ¡Eres una super mamá!",
-  "Eres una mamá excelente, que todo lo que hace y hará siempre será para nuestra hija. Nunca olvidaré las veces que trabajabas con Victoria en brazos o estudiabas con ella en tu vientre. ¡Eres la mejor mamá del mundo!",
+  "Pero todo eso no hubiera sido posible si no fuera por ti, tú has sido un pilar fundamental en mi vida y en la de Victoria.",
+  "Eres una mamá excelente, que todo lo que hace y hará siempre será para nuestra hija. Nunca olvidaré las veces que trabajabas con Victoria en brazos o estudiabas con ella en tu vientre. Por eso y muchas cosas eres la mejor mama del mundo",
   "Te amo con todo mi corazón, y no habrá nada ni nadie que cambie eso. Me esforzaré en la vida para darte todo lo que mereces, todo lo que necesites para que seas feliz. Tú y Victoria se merecen todo lo más bonito de este mundo, y es por eso que estamos haciendo todo esto.",
-  "Sé que por falta de tiempo y dinero (aunque lo tienes escondido 😅), no puedo darte nada hoy, pero sí puedo hacerte esto, que es lo que más me gusta ❤️.",
+  "Sé que por falta de tiempo y dinero (aunque lo tienes escondido :)), no puedo darte nada hoy, pero sí puedo hacerte esto, que es lo que más me gusta ❤️.",
   "img", "img", "img", "img", "img", "img"
 ];
 
