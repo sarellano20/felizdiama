@@ -7,9 +7,17 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <audio id="bg-music" preload="auto">
+  <audio id="bg-music" preload="auto" loop>
     <source src="audio/musica.mp3" type="audio/mpeg">
   </audio>
+
+  <div class="music-toggle">
+    <label class="switch">
+      <input type="checkbox" id="toggleMusic" onchange="toggleMusic()">
+      <span class="slider"></span>
+    </label>
+    <span class="music-label">Música</span>
+  </div>
 
   <div class="scene-container">
     <h1>🌷 Feliz Día de la Madre 🌷</h1>

@@ -46,3 +46,14 @@ function showHearts() {
     container.appendChild(heart);
   }
 }
+
+
+function toggleMusic() {
+  const music = document.getElementById("bg-music");
+  const toggle = document.getElementById("toggleMusic");
+  if (toggle.checked) {
+    music.play().catch(e => console.log("Error al reproducir audio:", e));
+  } else {
+    music.pause();
+  }
+}
