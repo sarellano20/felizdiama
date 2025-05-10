@@ -19,6 +19,13 @@ const texts = [
 let current = 0;
 
 function nextScene() {
+  // Activar audio al primer clic
+  const music = document.getElementById("bg-music");
+  if (music.muted) {
+    music.muted = false;
+    music.play();
+  }
+
   current++;
   if (current < images.length) {
     document.getElementById("scene-image").src = images[current];

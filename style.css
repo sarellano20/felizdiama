@@ -36,21 +36,23 @@ img {
 p {
   font-size: 1.2em;
   margin-bottom: 20px;
+  padding: 0 10px;
 }
 
 button {
   background-color: #ec407a;
   color: white;
   border: none;
-  padding: 12px 25px;
+  padding: 14px 30px;
   font-size: 16px;
   border-radius: 30px;
   cursor: pointer;
-  transition: background 0.3s;
+  transition: all 0.3s ease;
 }
 
 button:hover {
   background-color: #d81b60;
+  transform: scale(1.05);
 }
 
 .dedicatoria h2 {
@@ -61,6 +63,7 @@ button:hover {
 .corazones {
   position: relative;
   margin-top: 20px;
+  min-height: 100px;
 }
 
 .heart {
@@ -70,9 +73,18 @@ button:hover {
   font-size: 24px;
 }
 
+.animated {
+  animation: fadeSlide 0.6s ease;
+}
+
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(15px); }
   to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeSlide {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
 }
 
 @keyframes flotar {
