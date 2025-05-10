@@ -10,10 +10,10 @@ const images = [
 
 const texts = [
   "Hola mi amor, se que estos tiempos han sido difíciles, pero la capacidad que hemos tenido para poder haber salido adelante me ha demostrado que somos personas fuertes y capaces de muchas cosas.",
-  "Pero todo eso no hubiera sido posible si no fuera por ti, tú has sido un pilar fundamental en mi vida y en la de Victoria.",
-  "Eres una mamá excelente, que todo lo que hace y hará siempre será para nuestra hija. Nunca olvidaré las veces que trabajabas con Victoria en brazos o estudiabas con ella en tu vientre. Por eso y muchas cosas eres la mejor mama del mundo",
+  "Pero todo eso no hubiera sido posible si no fuera por ti, tú has sido un pilar fundamental en mi vida y en la de Victoria. ¡Eres una super mamá!",
+  "Eres una mamá excelente, que todo lo que hace y hará siempre será para nuestra hija. Nunca olvidaré las veces que trabajabas con Victoria en brazos o estudiabas con ella en tu vientre. ¡Eres la mejor mamá del mundo!",
   "Te amo con todo mi corazón, y no habrá nada ni nadie que cambie eso. Me esforzaré en la vida para darte todo lo que mereces, todo lo que necesites para que seas feliz. Tú y Victoria se merecen todo lo más bonito de este mundo, y es por eso que estamos haciendo todo esto.",
-  "Sé que por falta de tiempo y dinero (aunque lo tienes escondido :)), no puedo darte nada hoy, pero sí puedo hacerte esto, que es lo que más me gusta ❤️.",
+  "Sé que por falta de tiempo y dinero (aunque lo tienes escondido 😅), no puedo darte nada hoy, pero sí puedo hacerte esto, que es lo que más me gusta ❤️.",
   "img", "img", "img", "img", "img", "img"
 ];
 
@@ -49,12 +49,12 @@ function nextScene() {
 
 function getImageText(index) {
   const imageTexts = [
-    "Eres la luz de nuestros dias, la razon por la cual el amor familiar es tan bonito ❤️",
-    "Tu manera de ser, tu forma tan caracteristica es lo que te hace a ti especial(me encantas). 💕",
-    "Brillas en todo lo que haces, con el minimo esfuerzo tu siempre estas a un pie que el resto de personas a tu alrededor ☀️",
-    "Eres una mujer admirable, fuerte, dedicada, eres todo lo que no te imaginas, eres simplemente la mejor mama del mundo! 👩‍👧",
-    "Dios me premio contigo, siempre agradezo cada dia por tenerlas a ustedes, son toda mi felicidad 🎈",
-    "Siempre te apoyare en todo lo que hagas, este o no este a mi alcance, te mereces mi ayuda siempre, eso jamas te faltara. 👨‍👩‍👧"
+    "Tu amor es medicina que cura hasta el alma. Gracias por ser esa madre tan fuerte y tierna a la vez. ❤️",
+    "Victoria tiene el mejor ejemplo: una mamá valiente, alegre y llena de amor. 💕",
+    "Con tu ternura todo es más fácil, tu risa es el sol de nuestra casa. ☀️",
+    "Hoy celebramos más que tu maternidad, celebramos tu fuerza, tu esfuerzo y tu infinito corazón. 🎓👩‍👧",
+    "No hay palabras suficientes para agradecerte... Solo amor, abrazos y esta sorpresa. 🎈",
+    "¡Te amamos! Eres nuestra reina, nuestra compañera y nuestro hogar. 👨‍👩‍👧"
   ];
   return imageTexts[index] || "";
 }
